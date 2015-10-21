@@ -24,21 +24,33 @@ class Car extends Auto implements CarInterface
         return $message;
     }
 
+    /**
+     * @return mixed
+     */
     public function getDoor()
     {
         return $this->numberofdoors;
     }
 
+    /**
+     * @return mixed
+     */
     public function getSpeed()
     {
         return $this->speed;
     }
 
+    /**
+     * @param $value
+     */
     public function setDoor($value)
     {
         $this->numberofdoors=$value;
     }
 
+    /**
+     * @param $value
+     */
     public function setSpeed($value)
     {
         $this->speed=$value;

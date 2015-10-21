@@ -24,21 +24,33 @@ class Track extends Auto implements TrackInterface
         return $message;
     }
 
+    /**
+     * @return mixed
+     */
     public function getTire()
     {
         return $this->numberoftires;
     }
 
+    /**
+     * @return mixed
+     */
     public function getCapasity()
     {
         return $this->capasity;
     }
 
+    /**
+     * @param $value
+     */
     public function setTire($value)
     {
         $this->numberoftires=$value;
     }
 
+    /**
+     * @param $value
+     */
     public function setCapasity($value)
     {
         $this->capasity=$value;

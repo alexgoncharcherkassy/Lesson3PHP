@@ -15,17 +15,27 @@ class Auto extends AbstractAuto
     protected $color;
     protected $model;
 
+    /**
+     * @param $color
+     * @param $model
+     */
     public function __construct($color, $model)
     {
         $this->color=$color;
         $this->model=$model;
     }
 
+    /**
+     * @return mixed
+     */
     public function getColor()
     {
         return $this->color;
     }
 
+    /**
+     * @return mixed
+     */
     public function getModel()
     {
         return $this->model;
