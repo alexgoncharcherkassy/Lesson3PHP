@@ -1,0 +1,18 @@
+{
+    "name": "geekhub/lesson3",
+    "description": "oop",
+    "authors": [
+        {
+            "name": "Aleksandr Gonchar",
+            "email": "shuric2005@mail.ru"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Car\\": "src/Car",
+            "Auto\\": "src/Auto",
+            "Track\\": "src/Track"
+                  }
+               },
+    "require": {}
+}
