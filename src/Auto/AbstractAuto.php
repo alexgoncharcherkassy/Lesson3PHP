@@ -18,9 +18,9 @@ abstract class AbstractAuto
      */
     public function __toString()
     {
-        $message ='';
-        $message.='Model: '.$this->getModel().'<br/>';
-        $message.='Color: '.$this->getColor().'<br/>';
+        $message = '';
+        $message .= 'Model: '.$this->getModel().'<br/>';
+        $message .= 'Color: '.$this->getColor().'<br/>';
 
         return $message;
     }

@@ -17,9 +17,9 @@ class Car extends Auto implements CarInterface
 
     public function __toString()
     {
-        $message=parent::__toString();
-        $message.='Doors: '.$this->getDoor().'<br/>';
-        $message.='Speed: '.$this->getSpeed().'<br/>';
+        $message = parent::__toString();
+        $message .= 'Doors: '.$this->getDoor().'<br/>';
+        $message .= 'Speed: '.$this->getSpeed().'<br/>';
 
         return $message;
     }
@@ -45,7 +45,7 @@ class Car extends Auto implements CarInterface
      */
     public function setDoor($value)
     {
-        $this->numberofdoors=$value;
+        $this->numberofdoors = $value;
     }
 
     /**
@@ -53,7 +53,7 @@ class Car extends Auto implements CarInterface
      */
     public function setSpeed($value)
     {
-        $this->speed=$value;
+        $this->speed = $value;
     }
 
 }

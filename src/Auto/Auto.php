@@ -21,8 +21,8 @@ class Auto extends AbstractAuto
      */
     public function __construct($color, $model)
     {
-        $this->color=$color;
-        $this->model=$model;
+        $this->color = $color;
+        $this->model = $model;
     }
 
     /**

@@ -17,9 +17,9 @@ class Track extends Auto implements TrackInterface
 
     public function __toString()
     {
-        $message=parent::__toString();
-        $message.='Tires: '.$this->getTire().'<br/>';
-        $message.='Capasity: '.$this->getCapasity().'<br/>';
+        $message = parent::__toString();
+        $message .= 'Tires: '.$this->getTire().'<br/>';
+        $message .= 'Capasity: '.$this->getCapasity().'<br/>';
 
         return $message;
     }
@@ -45,7 +45,7 @@ class Track extends Auto implements TrackInterface
      */
     public function setTire($value)
     {
-        $this->numberoftires=$value;
+        $this->numberoftires = $value;
     }
 
     /**
@@ -53,6 +53,6 @@ class Track extends Auto implements TrackInterface
      */
     public function setCapasity($value)
     {
-        $this->capasity=$value;
+        $this->capasity = $value;
     }
 }
