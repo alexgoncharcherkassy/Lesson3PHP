@@ -36,3 +36,7 @@ foreach ($arr as $mobile) {
     echo $mobile;
     echo '<hr/>';
 }
+
+$track->fork='<a href="index.php">INDEX</a>';
+
+print($track->fork);

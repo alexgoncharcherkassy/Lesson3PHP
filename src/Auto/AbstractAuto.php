@@ -40,9 +40,8 @@ abstract class AbstractAuto
      */
     public function __set($variable, $value)
     {
-        if (!is_string($value)) {
+        if (is_string($value)) {
             $value=htmlspecialchars($value);
-            $value=quotemeta($value);
         }
         $this->$variable=$value;
     }
