@@ -12,31 +12,31 @@ use Auto\Auto;
 use Car\Car;
 use Track\Track;
 
-$auto=new Auto('red','bmw');
+$auto = new Auto('red', 'bmw');
 
 print($auto);
 echo '<br/>';
 
-$car=new Car('black','audi');
+$car = new Car('black', 'audi');
 $car->setDoor('4');
 $car->setSpeed('200');
 
 print($car);
 echo '<br/>';
 
-$track=new Track('white','man');
+$track = new Track('white', 'man');
 $track->setCapasity('25t');
 $track->setTire('8');
 
 print($track);
 echo '<br/>';
 
-$arr=array($auto, $car, $track);
+$arr = array($auto, $car, $track);
 foreach ($arr as $mobile) {
     echo $mobile;
     echo '<hr/>';
 }
 
-$track->fork='<a href="index.php">INDEX</a>';
+$track->fork = '<a href="index.php">INDEX</a>';
 
 print($track->fork);

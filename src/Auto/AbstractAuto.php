@@ -18,7 +18,7 @@ abstract class AbstractAuto
      */
     public function __toString()
     {
-        $message='';
+        $message ='';
         $message.='Model: '.$this->getModel().'<br/>';
         $message.='Color: '.$this->getColor().'<br/>';
 
@@ -41,9 +41,9 @@ abstract class AbstractAuto
     public function __set($variable, $value)
     {
         if (is_string($value)) {
-            $value=htmlspecialchars($value);
+            $value = htmlspecialchars($value);
         }
-        $this->$variable=$value;
+        $this->$variable = $value;
     }
 
 }
