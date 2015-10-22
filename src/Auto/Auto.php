@@ -41,10 +41,13 @@ class Auto extends AbstractAuto
         return $this->model;
     }
 
+    /**
+     * @param Auto $obj
+     */
     public static function toUpper(Auto $obj)
     {
-        foreach ($obj as $key=>&$value) {
-            $value=strtoupper($value);
+        foreach ($obj as $key => &$value) {
+            $value = strtoupper($value);
         }
     }
 }
