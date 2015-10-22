@@ -33,6 +33,7 @@ echo '<br/>';
 
 $arr = array($auto, $car, $track);
 foreach ($arr as $mobile) {
+    Auto::toUpper($mobile);
     echo $mobile;
     echo '<hr/>';
 }
@@ -40,3 +41,4 @@ foreach ($arr as $mobile) {
 $track->fork = '<a href="index.php">INDEX</a>';
 
 print($track->fork);
+

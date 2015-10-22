@@ -40,4 +40,11 @@ class Auto extends AbstractAuto
     {
         return $this->model;
     }
+
+    public static function toUpper(Auto $obj)
+    {
+        foreach ($obj as $key=>&$value) {
+            $value=strtoupper($value);
+        }
+    }
 }
