@@ -59,11 +59,17 @@ class Track extends Auto implements TrackInterface, PriceInterface
         $this->capacity = $value;
     }
 
+    /**
+     * @param $price
+     */
     public function setPrice($price)
     {
         $this->price = $price*1.2;
     }
 
+    /**
+     * @return mixed
+     */
     public function getPrice()
     {
         return $this->price;

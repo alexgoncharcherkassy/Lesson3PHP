@@ -59,11 +59,17 @@ class Car extends Auto implements CarInterface, PriceInterface
         $this->speed = $value;
     }
 
+    /**
+     * @param $price
+     */
     public function setPrice($price)
     {
         $this->price = $price;
     }
 
+    /**
+     * @return mixed
+     */
     public function getPrice()
     {
         return $this->price;
