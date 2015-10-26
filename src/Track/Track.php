@@ -9,17 +9,20 @@
 namespace Track;
 
 use Auto\Auto;
+use Auto\PriceInterface;
 
-class Track extends Auto implements TrackInterface
+class Track extends Auto implements TrackInterface, PriceInterface
 {
-    protected $numberoftires;
-    protected $capasity;
+    protected $numberOfTires;
+    protected $capacity;
+    protected $price;
 
     public function __toString()
     {
         $message = parent::__toString();
         $message .= 'Tires: '.$this->getTire().'<br/>';
-        $message .= 'Capasity: '.$this->getCapasity().'<br/>';
+        $message .= 'Capacity: '.$this->getCapacity().'<br/>';
+        $message .= 'Price: '.$this->getPrice().'<br/>';
 
         return $message;
     }
@@ -29,15 +32,15 @@ class Track extends Auto implements TrackInterface
      */
     public function getTire()
     {
-        return $this->numberoftires;
+        return $this->numberOfTires;
     }
 
     /**
      * @return mixed
      */
-    public function getCapasity()
+    public function getCapacity()
     {
-        return $this->capasity;
+        return $this->capacity;
     }
 
     /**
@@ -45,14 +48,24 @@ class Track extends Auto implements TrackInterface
      */
     public function setTire($value)
     {
-        $this->numberoftires = $value;
+        $this->numberOfTires = $value;
     }
 
     /**
      * @param $value
      */
-    public function setCapasity($value)
+    public function setCapacity($value)
     {
-        $this->capasity = $value;
+        $this->capacity = $value;
+    }
+
+    public function setPrice($price)
+    {
+        $this->price = $price*1.2;
+    }
+
+    public function getPrice()
+    {
+        return $this->price;
     }
 }

@@ -10,8 +10,8 @@ namespace Track;
 
 interface TrackInterface
 {
-    public function getCapasity();
+    public function getCapacity();
     public function getTire();
-    public function setCapasity($value);
+    public function setCapacity($value);
     public function setTire($value);
 }

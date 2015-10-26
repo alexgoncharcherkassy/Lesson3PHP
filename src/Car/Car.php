@@ -9,17 +9,20 @@
 namespace Car;
 
 use Auto\Auto;
+use Auto\PriceInterface;
 
-class Car extends Auto implements CarInterface
+class Car extends Auto implements CarInterface, PriceInterface
 {
-    protected $numberofdoors;
+    protected $numberOfDoors;
     protected $speed;
+    protected $price;
 
     public function __toString()
     {
         $message = parent::__toString();
         $message .= 'Doors: '.$this->getDoor().'<br/>';
         $message .= 'Speed: '.$this->getSpeed().'<br/>';
+        $message .= 'Price: '.$this->getPrice().'<br/>';
 
         return $message;
     }
@@ -29,7 +32,7 @@ class Car extends Auto implements CarInterface
      */
     public function getDoor()
     {
-        return $this->numberofdoors;
+        return $this->numberOfDoors;
     }
 
     /**
@@ -45,7 +48,7 @@ class Car extends Auto implements CarInterface
      */
     public function setDoor($value)
     {
-        $this->numberofdoors = $value;
+        $this->numberOfDoors = $value;
     }
 
     /**
@@ -54,6 +57,16 @@ class Car extends Auto implements CarInterface
     public function setSpeed($value)
     {
         $this->speed = $value;
+    }
+
+    public function setPrice($price)
+    {
+        $this->price = $price;
+    }
+
+    public function getPrice()
+    {
+        return $this->price;
     }
 
 }

@@ -20,13 +20,15 @@ echo '<br/>';
 $car = new Car('black', 'audi');
 $car->setDoor('4');
 $car->setSpeed('200');
+$car->setPrice('300');
 
 print($car);
 echo '<br/>';
 
 $track = new Track('white', 'man');
-$track->setCapasity('25t');
+$track->setCapacity('25t');
 $track->setTire('8');
+$track->setPrice('1000');
 
 print($track);
 echo '<br/>';
