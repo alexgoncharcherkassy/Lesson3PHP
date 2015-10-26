@@ -8,8 +8,6 @@
 
 namespace Auto;
 
-use Auto\AbstractAuto;
-
 class Auto extends AbstractAuto
 {
     protected $color;
